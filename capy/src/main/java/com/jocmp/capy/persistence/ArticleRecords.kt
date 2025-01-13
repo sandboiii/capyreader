@@ -8,6 +8,10 @@ import com.jocmp.capy.ArticleFilter
 import com.jocmp.capy.ArticleNotification
 import com.jocmp.capy.ArticleStatus
 import com.jocmp.capy.MarkRead
+import com.jocmp.capy.accounts.createStatus
+import com.jocmp.capy.accounts.updateStatus
+import com.jocmp.capy.accounts.upsertStarred
+import com.jocmp.capy.accounts.upsertUnread
 import com.jocmp.capy.articles.UnreadSortOrder
 import com.jocmp.capy.common.TimeHelpers.nowUTC
 import com.jocmp.capy.common.toDateTimeFromSeconds
@@ -90,7 +94,9 @@ internal class ArticleRecords internal constructor(
 
         articleIDs.forEach {
             database.transactionWithErrorHandling {
-                notificationQueries.createNotification(article_id = it)
+                runCatching {
+                    notificationQueries.createNotification(article_id = it)
+                }
             }
         }
 

@@ -7,6 +7,8 @@ import com.jocmp.capy.Feed
 import com.jocmp.capy.accounts.AddFeedResult
 import com.jocmp.capy.accounts.FeedOption
 import com.jocmp.capy.accounts.SubscriptionChoice
+import com.jocmp.capy.accounts.create
+import com.jocmp.capy.accounts.upsert
 import com.jocmp.capy.accounts.withErrorHandling
 import com.jocmp.capy.common.TimeHelpers
 import com.jocmp.capy.common.UnauthorizedError

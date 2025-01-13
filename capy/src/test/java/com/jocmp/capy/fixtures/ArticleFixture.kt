@@ -3,6 +3,8 @@ package com.jocmp.capy.fixtures
 import com.jocmp.capy.Article
 import com.jocmp.capy.Feed
 import com.jocmp.capy.RandomUUID
+import com.jocmp.capy.accounts.create
+import com.jocmp.capy.accounts.createStatus
 import com.jocmp.capy.common.TimeHelpers
 import com.jocmp.capy.db.Database
 import com.jocmp.capy.persistence.articleMapper

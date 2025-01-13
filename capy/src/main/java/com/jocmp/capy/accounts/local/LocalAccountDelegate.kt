@@ -6,6 +6,8 @@ import com.jocmp.capy.Feed
 import com.jocmp.capy.accounts.AddFeedResult
 import com.jocmp.capy.accounts.FaviconFetcher
 import com.jocmp.capy.accounts.FeedOption
+import com.jocmp.capy.accounts.create
+import com.jocmp.capy.accounts.upsert
 import com.jocmp.capy.common.TimeHelpers.nowUTC
 import com.jocmp.capy.common.TimeHelpers.published
 import com.jocmp.capy.common.transactionWithErrorHandling

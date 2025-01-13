@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         applicationId = "com.capyreader.app"
-        minSdk = 30
+        minSdk = 29
         targetSdk = 35
         versionCode = 1094
         versionName = "2025.01.1094"
@@ -61,7 +61,7 @@ android {
 
     signingConfigs {
         create("release") {
-            storeFile = file("${project.rootDir}/release.keystore")
+            storeFile = file("${project.rootDir}/release.jks")
             storePassword = secrets.getProperty("store_password")
             keyAlias = secrets.getProperty("key_alias")
             keyPassword = secrets.getProperty("key_password")
